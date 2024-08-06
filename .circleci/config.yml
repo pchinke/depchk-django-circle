@@ -11,9 +11,9 @@ jobs:
       - checkout
       - run: echo "This is a test step"
 
-    odc-backend:
-    machine: true
-    steps:
+  odc-backend:
+     machine: true
+     steps:
       - checkout
 
       - run: chmod +x ./run-depcheck.sh && ./run-depcheck.sh
